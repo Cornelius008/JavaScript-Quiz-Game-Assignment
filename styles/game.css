@@ -1,0 +1,149 @@
+body {
+    background-image: url("https://i1.wp.com/www.chimneyireland.net/wp-content/uploads/2018/11/videoblocks-ireland-with-flag-3d-earth-in-space-zoom-in-on-ireland-outer-created-using-ultra-high-res-nasa_bq9yac3pz_thumbnail-full14.png?fit=1920%2C1080");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    border-style: solid;
+    text-align: center;
+    font-style: italic;
+    font-size: xx-large;
+    color: aliceblue;
+    text-shadow: 0.5px 6px 1px black;
+}
+
+h2 {
+    text-align: center;
+    text-underline-position: below;
+    font-size: xx-large;
+    text-shadow: 4px 4px 2px black;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    font-stretch: expanded;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 5px 2px black;
+    margin-bottom: 25px;
+    border-radius: 25px;
+
+}
+
+legend {
+    text-align: center;
+    font-size: x-large;
+    color: white;
+    text-shadow: black 10px 5px 5px;
+}
+
+h5 {
+    text-align: center;
+    font-stretch: expanded;
+    font-size: xx-large;
+    text-shadow: black 10px 5px 5px;
+    padding: 2.5px;
+    width: 300px;
+    margin-bottom: 25px;
+    border-radius: 25px;
+    color: white;
+    background: rgb(12, 82, 3);
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+h5:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(2, 255, 2);
+    transform: scale(1.25);
+}
+
+.btn_img {
+    width: 550px;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    align-items: center;
+    margin: 5px;
+    border: 5px solid black;
+    opacity: 0.65;
+}
+
+.btn_img:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(250, 250, 250);
+    transform: scale(1.02);
+    opacity: 1.0;
+}
+
+h6 {
+    text-align: center;
+    font-stretch: expanded;
+    color: greenyellow;
+    font-size: xx-large;
+    text-shadow: 10px 5px 10px black;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    width: 85%;
+    border: 5px solid black;
+    padding: 50px;
+    border-radius: 45px;
+    box-shadow: 5px 5px 7.5px;
+}
+
+.btn_img {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(26, 26, 26);
+    transform: scale(1);
+}
+
+.container-16x9 {
+    position: relative;
+    padding-top: 100%;
+}
+
+video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+p{
+    font-size: xx-large;
+    padding: 5px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    background: rgb(199, 0, 0);
+    text-shadow: black 4px 4px 5px;
+    padding: 2.5px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+p:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(116, 0, 194);
+    transform: scale(1.1);
+}

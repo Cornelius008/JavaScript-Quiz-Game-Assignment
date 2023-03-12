@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Geography Quiz</title>
+  <link rel="stylesheet" href="styles/game.css">
+</head>
+
+<body>
+  <header>
+    <h1> Welcome To The Geography Quiz </h1>
+  </header>
+
+  <h5> Enter Name Here:
+    <input id="userInput">
+    <button onclick="PlayerNameFunction()"> Submit </button>
+    <br>
+  </h5>
+
+  <h5 id="PlayerNameText"> </h5>
+  <h2> Press on the Correct Image to move on.</h2>
+  <br>
+
+  <br>
+  <script>
+    var mins = 1;
+    var secs = mins * 60;
+    var timeout;
+
+    function countdownTimerText() {
+      timeout = setTimeout('countdownValue()', 1000);
+    }
+
+    function timerTextColor(minutes, seconds) {
+      if (minutes.value == "00" && seconds.value == "59") {
+        minutes.style.color = "green";
+        seconds.style.color = "green";
+      }
+      else if (minutes.value == "00" && seconds.value == "45") {
+        minutes.style.color = "yellowgreen";
+        seconds.style.color = "yellowgreen";
+      }
+      else if (minutes.value == "00" && seconds.value == "35") {
+        minutes.style.color = "orange";
+        seconds.style.color = "orange";
+      }
+      else if (minutes.value == "00" && seconds.value == "20") {
+        minutes.style.color = "darkorange";
+        seconds.style.color = "darkorange";
+      }
+      else if (minutes.value == "00" && seconds.value == "10") {
+        minutes.style.color = "red";
+        seconds.style.color = "red";
+      }
+
+    }
+
+    function countdownValue() {
+      if (document.getElementById) {
+        minutes = document.getElementById("minutes");
+        seconds = document.getElementById("seconds");
+
+
+        if (seconds < 59) {
+          seconds.value = secs;
+
+        } else {
+          minutes.value = timerTextMinutes();
+          seconds.value = timerTextSeconds();
+        }
+        timerTextColor(minutes, seconds);
+
+        secs--;
+        if (secs < 0) {
+          clearTimeout(timeout);
+          return
+          window.location.reload();
+        }
+        countdownTimerText();
+      }
+    }
+
+    function timerTextMinutes() {
+
+      mins = Math.floor(secs / 60);
+      return ("0" + mins).substr(-2);
+    }
+
+    function timerTextSeconds() {
+      return ("0" + (secs - Math.round(mins * 60))).substr(-2);
+    }
+  </script>
+
+  <h3>
+    <div id="timer">
+      Current Time: <input id="minutes" type="text" style=>
+      <input id="seconds" type="text" style=>
+    </div>
+  </h3>
+  <script>
+    countdownTimerText();
+  </script>
+
+   <p><a href="index.html">Reset Game</a> </p>
+
+  <legend id="instructor1">
+    Q1.What is the smallest county in Ireland?
+    <br>
+    Q2.What is the most populated county in Ireland
+    <br>
+    Q3.What county is Newgrange located in?
+    <br>
+    Q4.Where is the Giants Causeway located?"
+    <br>
+    Q5.Where can the Cliffs of Moher be found?
+    <br>
+    Q6.Where is the Ards Peninsula?
+    <br>
+    Q7.What county is know as being the festival capital?
+    <br>
+    Q8.Where can you find the mountain Carrauntoohil?
+    <br>
+    Q9.The highest cliffs in Croaghaun, Irealnd are in what county?
+    <br>
+    Q10.What county is the best in Ireland?
+    <br>
+  </legend>
+  <form>
+
+    <img src="images/Letrim.png" class="btn_img" alt="" id="Leitrim">
+    <figure id="btn1Option">Leitrim</figure>
+
+    <br>
+
+    <img src="images/Louth.png" class="btn_img" alt="" id="Louth">
+    <br>
+    <figure id="btn2Option">Louth</figure>
+    <br>
+
+
+    <img src="images/cork.png" class="btn_img" alt="" id="Cork">
+    <figure id="btn3Option">Cork</figure>
+    <br>
+
+    <img src="images/rosscommon.png" class="btn_img" alt="" id="Rosscommon">
+    <figure id="btn4Option">Rosscommon</figure>
+    <br>
+
+    <br>
+    <p></p>
+
+  </form>
+
+  <script src="code/code.js"></script>
+
+</body>
+<html>
